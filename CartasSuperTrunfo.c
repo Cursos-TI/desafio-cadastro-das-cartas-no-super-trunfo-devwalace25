@@ -1,22 +1,82 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+    char estado[30];
+    char codigo[4];
+    char cidade[50];
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+//leitura dos dados
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    printf("Estado: ");
+    scanf("%s" , estado);
+
+
+    printf("Código da carta: ");
+    scanf("%s" , codigo);
+
+
+    printf("Nome da cidade: ");
+    scanf("%s" , cidade);
+
+
+    printf("População: ");
+    scanf("%d", &populacao);
+
+
+    printf("Área (km²): ");
+    scanf("%f" , &area);
+
+
+    printf("PIB (bilhões): ");
+    scanf("%f" , &pib);
+
+
+    printf("Pontos Turísticos: ");
+    scanf("%d" , &pontosTuristicos);
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    // Impressão dos dados
+    printf("\n--- Carta Super Trunfo ---\n");
+    printf("Estado: %s\n", estado);
+    printf("Código: %s\n", codigo);
+    printf("Cidade: %s\n", cidade);
+    printf("População: %d habitantes\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("Pontos Turísticos: %d\n", pontosTuristicos);
+    printf("--------------------------\n");
 
     return 0;
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
